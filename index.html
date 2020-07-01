@@ -19,85 +19,205 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/libs/owl-carousel/css/owl.carousel.min.css" />
+    <!-- <link rel="stylesheet" href="assets/libs/owl-carousel/css/owl.carousel.min.css" /> -->
 </head>
 
 <body>
 
     <!-- Header section -->
-    <nav class="navbar navbar-light bg-gradient-primary">
-        <a class="navbar-brand" href="https://superstore.pe/">
-            <div class="d-none d-md-block">
-                <img src="assets/images/logos/logo-white.png" class="img-fluid" width="300" height="120"
-                    alt="Enlatienda.pe" loading="lazy" />
-            </div>
-            <div class="d-md-none d-lg-none d-block">
-                <img src="assets/images/logos/logo-white.png" class="img-fluid" width="190" height="75"
-                    alt="Enlatienda.pe" loading="lazy" />
-            </div>
+    <nav class="navbar navbar-light bg-gradient-primary fixed-top">
+        <a class="navbar-brand text-center-sm" href="https://superstore.pe/">
+            <img src="assets/images/logos/logo-white.png" class="img-fluid" width="200" height="85" alt="Superstore.pe"
+                loading="lazy" />
         </a>
 
-        <div class="d-flex align-items-center justify-content-center" style="margin-left: auto;">
-            <a class="text-decoration-none" href="javascript:shareIndexOnFacebook()">
+        <div class="d-flex align-items-center justify-content-center ml-auto mr-auto-sm">
+            <a id="faceboookButton" class="text-decoration-none" href="#">
                 <div class="rounded-icon white mr-2">
                     <i class="fab fa-facebook-f"></i>
                 </div>
             </a>
 
-            <a class="text-decoration-none" href="javascript:shareIndexOnWhatsapp()">
+            <a id="whatsappButton" class="text-decoration-none" href="#">
                 <div class="rounded-icon white mr-2">
                     <i class="fab fa-whatsapp font-weight-bold"></i>
                 </div>
             </a>
 
-            <a class="text-decoration-none" href="javascript:shareIndexOnTwitter()">
+            <a id="instragramButton" class="text-decoration-none" href="#">
                 <div class="rounded-icon white mr-2">
                     <i class="fab fa-instagram font-weight-bold"></i>
                 </div>
             </a>
+
+            <div class="mr-2">
+                <a href="https://sisuz.com" target="_blank" class="btn btn-light">Contáctanos</a>
+            </div>
+            <div>
+                <a class="btn btn-orange" href="http://198.12.255.151:8098/deuz/#/" target="_blank">Ver Demo</a>
+            </div>
         </div>
     </nav>
     <!-- End: Header section -->
 
     <div class="d-none d-lg-block">
-        <div class="container mt-5 mb-4">
-            <div id="homeCarouselXl" class="owl-carousel owl-theme">
-                <div>
-                    <img src="assets/images/home/desktop/H1.png" style="width: 100%; height: 380px;" />
+        <div id="homeCarouselXl" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/home/desktop/H1.png" class="d-block w-100" style="height: 93vh;">
                 </div>
-                <div>
-                    <img src="assets/images/home/desktop/H2.png" style="width: 100%; height: 380px;" />
+                <div class="carousel-item">
+                    <img src="assets/images/home/desktop/H2.png" class="d-block w-100" style="height: 93vh;">
                 </div>
-                <div>
-                    <img src="assets/images/home/desktop/H3.png" style="width: 100%; height: 380px;" />
+                <div class="carousel-item">
+                    <img src="assets/images/home/desktop/H3.png" class="d-block w-100" style="height: 93vh;">
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#homeCarouselXl" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#homeCarouselXl" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 
     <div class="d-block d-lg-none">
-        <div class="container mt-4 mb-4">
-            <div id="homeCarouselSm" class="owl-carousel owl-theme">
-                <div>
-                    <img src="assets/images/home/mobile/V1.png" style="width: 100%; height: 540px;" />
+        <div id="homeCarouselSm" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/home/mobile/V1.png" class="d-block w-100" style="height: 95vh;">
                 </div>
-                <div>
-                    <img src="assets/images/home/mobile/V2.png" style="width: 100%; height: 540px;" />
+                <div class="carousel-item">
+                    <img src="assets/images/home/mobile/V2.png" class="d-block w-100" style="height: 95vh;">
                 </div>
-                <div>
-                    <img src="assets/images/home/mobile/V3.png" style="width: 100%; height: 540px;" />
+                <div class="carousel-item">
+                    <img src="assets/images/home/mobile/V3.png" class="d-block w-100" style="height: 95vh;">
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#homeCarouselSm" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#homeCarouselSm" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 
     <!-- Footer section -->
-    <footer class="fixed-bottom">
-        <div class="bg-gradient-primary pt-4 pb-4">
-            <div class="d-flex justify-content-center text-white">
-                <span>Desarrollado por: <a href="https://sisuz.com/" class="sisuz-link">SISUZ.com</a></span>
+    <footer>
+        <!-- Footer-bottom-widgets -->
+        <div class="pt-4 pb-4 bg-gradient-gray">
+            <div class="container-fluid mt-1">
+                <div class="row">
+                    <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                        <div class="mb-4">
+                            <a href="#" class="d-inline-block">
+                                <img src="assets/images/logos/logo-dark.png" alt="Enlatienda.pe" width="220"
+                                    height="45">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-12 col-md mb-4 mb-md-0">
+                                <h6 class="mb-3 font-weight-bold">Acerca de</h6>
+                                <!-- List Group -->
+                                <ul
+                                    class="list-group list-group-flush list-group-borderless mb-0 list-group-transparent">
+                                    <li><a class="list-group-item list-group-item-action" href="#">Quiénes Somos</a>
+                                    </li>
+                                    <li><a class="list-group-item list-group-item-action" href="#">Misión</a></li>
+                                    <li><a class="list-group-item list-group-item-action" href="#">Visión</a></li>
+                                    <li><a class="list-group-item list-group-item-action" href="#">Objetivos</a></li>
+                                </ul>
+                                <!-- End List Group -->
+                            </div>
+
+                            <div class="col-12 col-md mb-4 mb-md-0">
+                                <h6 class="mb-3 font-weight-bold">Servicio al cliente</h6>
+                                <!-- List Group -->
+                                <ul
+                                    class="list-group list-group-flush list-group-borderless mb-0 list-group-transparent">
+                                    <li><a class="list-group-item list-group-item-action" href="#">Preguntas
+                                            Frecuentes</a></li>
+                                    <li><a class="list-group-item list-group-item-action" href="#">Centro de Ayuda</a>
+                                    </li>
+                                    <li><a class="list-group-item list-group-item-action" href="#">Libro de
+                                            Reclamaciones</a></li>
+                                </ul>
+                                <!-- End List Group -->
+                            </div>
+
+                            <div class="col-12 col-md mb-4 mb-md-0">
+                                <h6 class="mb-3 font-weight-bold">Legal</h6>
+                                <!-- List Group -->
+                                <ul
+                                    class="list-group list-group-flush list-group-borderless mb-0 list-group-transparent">
+                                    <li><a class="list-group-item list-group-item-action" href="#">Términos y
+                                            Condiciones</a></li>
+                                    <li><a class="list-group-item list-group-item-action" href="#">Política de
+                                            Privacidad</a></li>
+                                </ul>
+                                <!-- End List Group -->
+                            </div>
+
+                            <div class="col-12 col-md mb-4 mb-md-0">
+                                <h6 class="mb-3 font-weight-bold">Contáctanos</h6>
+                                <!-- List Group -->
+                                <ul
+                                    class="list-group list-group-flush list-group-borderless mb-0 list-group-transparent">
+                                    <li><a class="list-group-item list-group-item-action" href="#">Comunícate con
+                                            Nosotros</a></li>
+                                </ul>
+                                <!-- End List Group -->
+                            </div>
+
+                            <div class="col-12 col-md mb-4 mb-md-0">
+                                <h6 class="mb-3 font-weight-bold">Redes Sociales</h6>
+                                <!-- List Group -->
+                                <ul class="list-inline mb-0 opacity-7">
+                                    <li class="list-inline-item mr-0">
+                                        <a class="rounded-icon dark text-decoration-none" href="#">
+                                            <span class="fab fa-facebook-f btn-icon__inner"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item mr-0">
+                                        <a class="rounded-icon dark text-decoration-none" href="#">
+                                            <span class="fab fa-instagram btn-icon__inner"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item mr-0">
+                                        <a class="rounded-icon dark text-decoration-none" href="#">
+                                            <span class="fab fa-youtube btn-icon__inner"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- End List Group -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- End Footer-bottom-widgets -->
+
+        <!-- Footer-copy-right -->
+        <div class="bg-gradient-primary py-3">
+            <div class="container">
+                <div class="align-content-center justify-content-end d-block d-md-flex text-white">
+                    <div class="mb-3 mb-md-0">Copyright© 2020 <a href="https://sisuz.com/"
+                            class="font-weight-bold text-gray-90 sisuz-link">SISUZ</a> - All
+                        rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer-copy-right -->
     </footer>
     <!-- End: Footer section -->
 
@@ -110,7 +230,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script src="assets/libs/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- <script src="assets/libs/owl-carousel/js/owl.carousel.min.js"></script> -->
     <script src="assets/js/superstore.js"></script>
 </body>
 
