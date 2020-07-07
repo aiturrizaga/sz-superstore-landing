@@ -220,4 +220,8 @@ button:active.owl-next {
   .footer-fixed {
     position: relative;
   }
+  .img-resize {
+    padding-top: 1em;
+    width: 15em;
+  }
 }
